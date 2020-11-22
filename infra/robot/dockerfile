@@ -1,0 +1,7 @@
+FROM python:3.8
+
+RUN pip install robotframework-selenium2library
+RUN pip install --upgrade robotframework-appiumlibrary
+
+
+ENTRYPOINT ["tail", "-f", "/dev/null"]
